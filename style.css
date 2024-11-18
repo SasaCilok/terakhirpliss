@@ -1,0 +1,232 @@
+:root {
+    --pr-color : grey;
+}
+
+body {
+    font-family: "Poppins", serif;
+    background-color: grey;
+}
+
+/* Navbar Style */
+
+.navbar {
+    z-index: 3;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+* {
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.accsent-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.collapse.show {
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--pr-color, grey);
+}
+
+@media (max-width: 768px) {
+    .accsent-img {
+        height: 50vh;
+        width: auto;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .accsent-img {
+        height: 40vh;
+        width: auto;
+        bottom: 5px;
+    }
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+/* Hero Section */
+
+#hero {
+    background: linear-gradient(160deg, var(--pr-color, #000));
+    height: 100vh;
+    width: 100vh;
+}
+
+.hero-tagline h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 72px;
+    margin-top: 60px;
+}
+
+.hero-tagline p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    width: 55%;
+}
+
+/*Layanan Section*/
+
+#layanan {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: rgb(89, 84, 84);
+}
+
+.sub-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.card-layanan {
+    width: 100%;
+    height: 320px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+    transition: all .2s ease-in;
+}
+
+.card-layanan h3 {
+    color: #000;
+    font-size: 24px;
+    transition: all .2s ease-in;
+}
+
+.card-layanan p {
+    color: #000;
+    font-size: 14px;
+    transition: all .3s ease-in;
+}
+
+/* HOver */
+.card-layanan:hover  {
+    width: 100%;
+    height: 320px;
+    border-radius: 5px;
+    background: linear-gradient(160deg, var(--pr-color), rgb(46, 46, 46));
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover h3 {
+    color: #fff;
+    font-size: 24px;
+    transition: all .2s ease-in;
+}
+
+.card-layanan:hover p {
+    color: #fff;
+    font-size: 14px;
+    transition: all .3s ease-in;
+}
+
+/* Section Rekomendasi */
+
+.card {
+    height: 450px;
+    border: none;
+}
+
+.section-title {
+    color: rgb(89, 84, 84);
+    font-weight: 500;
+}
+
+.card-body h4 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: .8rem;
+}
+
+.card-body p {
+    color: #454545;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card:hover {
+    background: linear-gradient(170deg, var(--pr-color), #a8b8b1, grey, #000);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    transition: all ease-in-out .3s;
+}
+
+.card:hover .card-body h4 {
+    color: #fff;
+    transition: all ease-in-out .3s;
+}
+
+.card:hover .card-body  p {
+    color: #fff;
+    transition: all ease-in-out .3s;
+}
+
+.card-fasilitas {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    background-color: #fff;
+}
+
+.card-fasilitas span {
+    font-weight: 500;
+    margin-top: 18px;
+    color: #000;
+}
+
+.card-fasilitas p {
+    font-size: 12px;
+}
+
+
+/* Maps Section */
+#maps {
+    padding: 50px 0;
+}
+
+.map {
+    color: rgb(89, 84, 84);
+    font-weight: 500;
+}
+
+
+
